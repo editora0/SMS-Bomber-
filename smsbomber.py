@@ -783,7 +783,12 @@ def is_phone(phone: str):
 
     # بررسی آیا شماره وارد شده متعلق به شماره مسدود است (در هر فرمتی)
     if blocked_number in phone:
-        print(f"{r}[!] با من لاشی؟")
+        print(f"{r}[!] fuck you
+	fuck you
+ fuck you
+ fuck you
+ fuck you
+ fuck you")
         return False  # برگرداندن False برای جلوگیری از ادامه اجرا
 
     # بررسی فرمت‌های مختلف شماره تلفن

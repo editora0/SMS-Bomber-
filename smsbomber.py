@@ -778,7 +778,15 @@ def mek(phone):
     except: pass
 # ================================[SEND SMS FUNC]================================
 def is_phone(phone: str):
-    phone = sub("\s+", "" ,phone.strip())
+    phone = sub("\s+", "", phone.strip())  # حذف فاصله‌ها
+    blocked_number = "9963977239"  # شماره مسدود شده
+
+    # بررسی آیا شماره وارد شده متعلق به شماره مسدود است (در هر فرمتی)
+    if blocked_number in phone:
+        print(f"{r}[!] با من لاشی؟")
+        return False  # برگرداندن False برای جلوگیری از ادامه اجرا
+
+    # بررسی فرمت‌های مختلف شماره تلفن
     if match(r"^\+989[0-9]{9}$", phone):
         return phone
     elif match(r"^989[0-9]{9}$", phone):
@@ -789,7 +797,6 @@ def is_phone(phone: str):
         return f"+98{phone}"
     else:
         return False
-
 def printLow(Str):
     for char in Str:
         print(char, end='', flush=True)

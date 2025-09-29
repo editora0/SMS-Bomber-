@@ -816,7 +816,7 @@ PV:@editor_a0_ADM
 
 
     {g}[♖] {y} Instagram: editor_a0{w}
-    {g}[♖] {y} TikTok:@editor_a0tiktok{w}
+    {g}[♖] {y} TikTok:@editor_a0_tiktok{w}
     
 {y}system:
     {g}[※] {y}Platform: {w}{System}
@@ -878,5 +878,6 @@ while True:
     try: Vip(phone, Time)
     except KeyboardInterrupt: exit(f'{r}[-] User Exited')
     except: print(f'{r}[-] Error TimeOut')
+
 
 
